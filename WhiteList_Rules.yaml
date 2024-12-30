@@ -252,10 +252,3 @@ dns:
     - https://120.53.53.53/dns-query
 log-level: warning
 mode: rule
-proxy-providers:
-  Amytelecom:
-    interval: 1440
-    url: https://sub.kwk7thgc.com/?L1N1YnNjcmlwdGlvbi9DbGFzaD90Zm89MSZzaWQ9NjgwOTkmdG9rZW49ZmxhMzduaktyQ3ImbW09NzgxODUmOTUzMg==
-  FlowerCloud:
-    interval: 1440
-    url: https://api-huacloud.dev/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_Trojan&url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Fsid%3D152245%26token%3DNnVu7bVaZ6pN
