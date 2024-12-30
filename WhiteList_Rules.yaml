@@ -1,4 +1,31 @@
-proxy-groups:
+# 延迟检测 URL
+p: &p
+  {type: http, interval: 3600, header: {User-Agent: ["meta", "clash.meta", "Clash/v1.18.0", "clash"]}, health-check: {enable: true, url: https://www.gstatic.com/generate_204, interval: 300, timeout: 5000, lazy: true}}
+
+# 配置代理提供者
+proxy-providers:
+  # 第一个代理提供者
+  # provider1:
+  #  <<: *p  # 继承通用配置
+  #  url: "https://ghgo.xyz/https://raw.githubusercontent.com/mfbpn/tg_mfbpn_sub/main/trial.yaml"
+
+  # 第二个代理提供者
+  # provider2:
+  #  <<: *p  # 继承通用配置
+  #  url: "https://ghgo.xyz/https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml"
+
+  provider3:
+    <<: *p  # 继承通用配置
+    url: "https://api-huacloud.dev/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_Trojan&url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Fsid%3D152245%26token%3DNnVu7bVaZ6pN"
+
+# URL 测试配置
+u:: &u
+  type: url-test  # 测试类型
+  use:
+  #  - provider1   # 使用第一个代理提供者
+  #  - provider2   # 使用第二个代理提供者
+    - provider3   # 使用第三个代理提供者
+    proxy-groups:
   # 功能分组
   - name: 选择代理
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
