@@ -1,14 +1,5 @@
 mode: rule
 log-level: warning
-proxy-providers:
-  Airport1:
-    url: "https://api-huacloud.dev/sub?target=clash&insert=true&emoji=true&udp=true&clash.doh=true&new_name=true&filename=Flower_Trojan.yaml&url=https%3A%2F%2Fapi.xmancdn.com%2Fosubscribe.php%3Ftoken2%3Dzyve82eq-f0cc965711eeq7ud3f"
-    type: http
-    interval: 86400
-  Airport2:
-    url: "https://161.129.35.81/?L1N1YnNjcmlwdGlvbi9DbGFzaD90PTIwMjImc2lkPTc0MDMwJnRva2VuPTUyNDBmNTYzY2FjYThmJm1tPTg0MTE2Jmt0bW09SW94dk5mWElaSFNoK0hBK1BkRXRIUT09JiZtbT04NDExNiZrdG1tPUlveHZOZlhJWkhTeGtubCUyZjdVQVJBdyUzZCUzZCYyZGQwODI5MjY5YTE0ZmM0YmNi"
-    type: http
-    interval: 86400
 dns:
   default-nameserver:
     - tls://223.5.5.5
